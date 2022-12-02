@@ -1,0 +1,39 @@
+<div class="container " style="padding: 50px;">
+
+    <div class="row">
+    <div class="col-md-6 m-auto">
+        <h1>Sign up</h1>
+        <form action="/signup" method="post" onclick="return validate()">
+         {{#if errorMessage}}
+            <p>"Email already exist"</p>
+            {{/if}}
+            <div class="form-outline mb-4">
+                <input type="text" id="lname" class="form-control" name="Name" required />
+                <label class="form-label" for="form2Example1">Name</label>
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" name="Email" required />
+                <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" name="Password" required/>
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>     
+            
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p><a href="/login">Already have an an account</a></p>
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+
+            </div>
+            
+        </form>
+    </div>
+</div>
+</div>
+
+

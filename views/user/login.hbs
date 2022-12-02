@@ -1,0 +1,35 @@
+<div class="container " style=" margin: auto; width: 50%;">
+    <div class="row " >
+        <div class="col-md-6 m-auto">
+            <h1>Login</h1>
+            <form action="/login" method="post">
+                <!-- Email input -->
+
+                {{#if loginErr}}
+                <p>Invalid Username or Password</p>
+                {{/if}}
+                <div class="form-outline mb-4">
+                    <input type="email" id="form2Example1" class="form-control" id="email" name="Email" />
+                    <label class="form-label" for="form2Example1">Email address</label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <input type="password" id="form2Example2" class="form-control" name="Password" />
+                    <label class="form-label" for="form2Example2">Password</label>
+                </div>
+
+
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                    <p>Not a member? <a href="/signup">Sign Up</a></p>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
